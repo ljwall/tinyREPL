@@ -1,0 +1,33 @@
+{
+  "name": "tinyREPL",
+  "version": "0.0.1",
+  "authors": [
+    "ljw <ljw.dev@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [
+    "amd"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery-console": "*",
+    "jquery": "~2.1.4",
+    "underscore": "~1.8.3",
+    "backbone": "~1.2.3",
+    "backbone.localStorage": "backbone.localstorage#~1.1.16",
+    "bluebird": "~2.10.2",
+    "requirejs": "~2.1.20",
+    "text": "requirejs-text#~2.0.14",
+    "tinyJSScheme": "ljwall/tinyJSScheme"
+  }
+}
