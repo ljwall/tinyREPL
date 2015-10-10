@@ -20,7 +20,7 @@ requirejs.config({
   }]
 });
 
-define(['REPLView'] {
+define(['REPLView'], function (REPLView) {
   var replView = new REPLView();
 });
 
