@@ -1,11 +1,28 @@
 <html>
   <head>
     <title>Require testing</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="bower_components/codemirror/lib/codemirror.css">
     <link rel="stylesheet" href="tinyJSSceheme.css">
+    <link rel="stylesheet" href="bower_components/codemirror/theme/solarized.css">
   </head>
   <body>
-    <h1>Foo!</h1>
-    <div class="REPL"></div>
+    <div class="container-fluid">
+      <div class="row" style="background-color: #EFEFFF; margin-bottom: 15px">
+        <div class="col-xs-12">
+          <h1>Tiny Scheme!</h1>
+          <h3></h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-6">
+          <div id="editor" class='editor'></div>
+        </div>
+        <div class="col-xs-6">
+          <div class="REPL"></div>
+        </div>
+      </div>
+    </div>
     <script data-main="scripts/main.js" src="scripts/require.js"></script>
   </body>
 </html>

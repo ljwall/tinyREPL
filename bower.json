@@ -28,6 +28,7 @@
     "bluebird": "~2.10.2",
     "requirejs": "~2.1.20",
     "text": "requirejs-text#~2.0.14",
-    "tinyJSScheme": "ljwall/tinyJSScheme"
+    "tinyJSScheme": "ljwall/tinyJSScheme",
+    "codemirror": "CodeMirror#~5.7.0"
   }
 }

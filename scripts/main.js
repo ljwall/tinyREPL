@@ -17,10 +17,23 @@ requirejs.config({
     name: 'tinyJSScheme',
     location: '../bower_components/tinyJSScheme',
     main: 'index'
+  },
+  {
+    name: 'codemirror',
+    location: '../bower_components/codemirror',
+    main: 'lib/codemirror'
   }]
 });
 
-define(['REPLView'], function (REPLView) {
-  var replView = new REPLView();
+define(['jquery',
+    'REPLView',
+    'EditorView',
+    'CodeModel'],
+function ($, REPLView, EditorView, CodeModel) {
+  var replView = new REPLView(),
+      editorView = new EditorView({
+        el: '.editor',
+        model: new CodeModel()
+      });
 });
 
