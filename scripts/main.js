@@ -25,11 +25,11 @@ requirejs.config({
   }]
 });
 
-define(['jquery',
+define([
     'REPLView',
     'EditorView',
     'CodeModel'],
-function ($, REPLView, EditorView, CodeModel) {
+function (REPLView, EditorView, CodeModel) {
   var replView = new REPLView(),
       editorView = new EditorView({
         el: '.editor',
