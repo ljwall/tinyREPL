@@ -28,12 +28,12 @@ requirejs.config({
 define([
     'REPLView',
     'EditorView',
-    'CodeModel'],
-function (REPLView, EditorView, CodeModel) {
+    'codeModel'],
+function (REPLView, EditorView, codeModel) {
   var replView = new REPLView(),
       editorView = new EditorView({
         el: '.editor',
-        model: new CodeModel()
+        model: codeModel
       });
 });
 
