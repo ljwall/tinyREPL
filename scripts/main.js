@@ -28,9 +28,12 @@ requirejs.config({
 define([
     'REPLView',
     'EditorView',
-    'codeModel'],
-function (REPLView, EditorView, codeModel) {
-  var replView = new REPLView(),
+    'CodeModel',
+    'Tiny'],
+function (REPLView, EditorView, CodeModel, Tiny) {
+  var codeModel = new CodeModel(),
+      tiny = new Tiny(codeModel);
+      replView = new REPLView({el: '.REPL', tiny: tiny}),
       editorView = new EditorView({
         el: '.editor',
         model: codeModel

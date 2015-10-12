@@ -10,6 +10,7 @@ function (Backbone, $, CodeMirror) {
       });
       this.render();
       this.editor.on('changes', this.edited);
+      this.model.on('change', this.render)
     },
     edited: function (editor) {
       this.model.set({code: editor.doc.getValue()});

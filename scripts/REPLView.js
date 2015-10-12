@@ -1,7 +1,8 @@
-define(['jquery', 'backbone', 'tinyService', 'jqueryconsole'], function ($, Backbone, tinyService) {
+define(['jquery', 'backbone', 'Tiny', 'jqueryconsole'], function ($, Backbone, Tiny) {
   return Backbone.View.extend({
-    el: 'div.REPL',
-    initialize: function () {
+    initialize: function (options) {
+      options = options || {};
+      var tinyService = options.tiny || new Tiny();
       var repl = $(this.el).console({
           promptLabel: 'tiny> ',
           commandValidate:function(line){
