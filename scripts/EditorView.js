@@ -13,7 +13,6 @@ function (Backbone, $, CodeMirror) {
     },
     edited: function (editor) {
       this.model.set({code: editor.doc.getValue()});
-      console.log(editor.doc.getValue());
     },
     render: function () {
       this.editor.doc.setValue(this.model.get('code'));
