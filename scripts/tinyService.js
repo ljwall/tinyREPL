@@ -1,5 +1,9 @@
-define(['tinyJSScheme'], function (tiny) {
+define(['tinyJSScheme', 'codeModel'], function (tiny, codeModel) {
   var env = Object.create(tiny.schemeEnv);
+
+  tiny.schemeIO.loadMixin(env, function () {
+    return codeModel.get('code');
+  });
 
   return {
     evalOne: function (str) {
