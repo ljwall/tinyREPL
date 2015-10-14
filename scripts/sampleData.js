@@ -1,0 +1,1 @@
+define(["CodeCollection","text!tinyschemer/intro.scm","text!tinyschemer/functioncalls.scm"],function(e,t,n){return new e([{name:"Intro",code:t},{name:"Function calls",code:n}])});
