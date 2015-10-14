@@ -28,15 +28,17 @@ requirejs.config({
 define([
     'REPLView',
     'EditorView',
-    'CodeModel',
-    'Tiny'],
-function (REPLView, EditorView, CodeModel, Tiny) {
-  var codeModel = new CodeModel(),
-      tiny = new Tiny(codeModel);
+    'Tiny',
+    'CodeRouter', 'backbone'],
+function (REPLView, EditorView, Tiny, CodeRouter, Backbone) {
+  var router = new CodeRouter(),
+      tiny = new Tiny(router.editorModel),
       replView = new REPLView({el: '.REPL', tiny: tiny}),
       editorView = new EditorView({
         el: '.editor',
-        model: codeModel
+        model: router.editorModel
       });
+
+  Backbone.history.start();
 });
 

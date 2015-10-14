@@ -16,7 +16,9 @@ function (Backbone, $, CodeMirror) {
       this.model.set({code: editor.doc.getValue()});
     },
     render: function () {
-      this.editor.doc.setValue(this.model.get('code'));
+      if (this.model.get('code') !== this.editor.doc.getValue()) {
+        this.editor.doc.setValue(this.model.get('code'));
+      }
     }
   });
 });
