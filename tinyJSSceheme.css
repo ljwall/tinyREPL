@@ -12,7 +12,19 @@ body, .CodeMirror {
     font-size: 20px;
 }
 
-.darkBtn {
+.headingRow {
+    padding-bottom: 3px
+}
+
+.footerRow {
+    padding-top: 30px
+}
+
+a {
+    color: #268bd2;
+}
+
+a.darkBtn {
     display: inline-block;
     padding: 5px;
     color: #073642;
@@ -20,13 +32,13 @@ body, .CodeMirror {
     border-radius: 5px;
 }
 
-.darkBtn:hover {
+a.darkBtn:hover {
     background: #B23200;
     color: #073642;
     text-decoration: none;
 }
 
-.darkBtn[disabled="disabled"] {
+a.darkBtn[disabled="disabled"] {
     background: #B23200;
     cursor: not-allowed;
     color: #7F0000;
