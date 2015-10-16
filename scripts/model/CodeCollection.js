@@ -1,0 +1,1 @@
+define(["model/CodeModel","backbone"],function(e,t){return t.Collection.extend({model:e})});

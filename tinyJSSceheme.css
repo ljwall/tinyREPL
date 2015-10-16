@@ -1,44 +1,82 @@
-.REPL, .CodeMirror {
-    height: 400px;
+body, .CodeMirror {
+    font-family: monospace;
+    background: #fdf6e3;
+}
+.noPad {
+    padding: 0px;
+}
+.tinyHead {
+    color: #cb4b16;
+    font-size: 20px;
+}
+.headingRow {
+    padding-bottom: 3px
+}
+.footerRow {
+    padding-top: 30px
+}
+a {
+    color: #268bd2;
+}
+a.darkBtn {
+    display: inline-block;
+    padding: 5px;
+    color: #073642;
+    background: #cb4b16;
+    border-radius: 5px;
+}
+a.darkBtn:hover {
+    background: #B23200;
+    color: #073642;
+    text-decoration: none;
+}
+a.darkBtn[disabled="disabled"] {
+    background: #B23200;
+    cursor: not-allowed;
+    color: #7F0000;
+}
+.CodeMirror-linenumbers {
+    background: #eee8d5;
+}
+.solarizedDark {
+    color: #93a1a1;
+    background: #073642;
+}
+h1 {
+    font-weight: normal;
+}
+.REPL, .editor{
+    height: 450px;
+}
+.CodeMirror {
+    height: 100%;
 }
 div.REPL {
     
     font-family:monospace;
 }
 div.REPL div.jquery-console-inner {
-    
     width: 100%;
-    
     height: 100%;
-    background:#333;
+    background: #073642;
     padding:0.5em;
     overflow:auto;
 }
 div.REPL div.jquery-console-prompt-box {
-    color:#fff;
+    color:#93a1a1;
     font-family:monospace;
 }
 div.REPL div.jquery-console-focus span.jquery-console-cursor{
-    background:#fefefe;
+    background:#93a1a1;
     color:#333;
-    
 }
 div.REPL div.jquery-console-message-error {
-    color:#ef0505;
-    font-family:sans-serif;
-    
+    color:#cb4b16;
+    font-family: monospace;
     padding:0.1em;
 }
 div.REPL div.jquery-console-message-value {
-    color:#1ad027;
+    color: #268bd2;
     font-family:monospace;
     padding:0.1em;
-}
-div.REPL div.jquery-console-message-type {
-    color:#52666f;
-    font-family:monospace;
-    padding:0.1em;
-}
-div.REPL span.jquery-console-prompt-label {
-    
 }

@@ -2,24 +2,41 @@
   <head>
     <title>Tiny Scheme REPL</title>
     <link rel="stylesheet" href="bootstrap.css">
-    <link rel="stylesheet" href="bower_components/codemirror/lib/codemirror.css">
+    <link rel="stylesheet" href="codemirror.css">
+    <link rel="stylesheet" href="solarized.css">
     <link rel="stylesheet" href="tinyJSSceheme.css">
-    <link rel="stylesheet" href="bower_components/codemirror/theme/solarized.css">
   </head>
   <body>
     <div class="container-fluid">
-      <div class="row" style="background-color: #EFEFFF; margin-bottom: 15px">
+      <div class="row solarizedDark">
         <div class="col-xs-12">
           <h1>Tiny Scheme!</h1>
           <h3></h3>
         </div>
       </div>
-      <div class="row">
-        <div class="col-xs-6">
-          <div id="editor" class='editor'></div>
+      <div class="row solarizedDark headingRow">
+        <div id="nav" class="col-xs-6">
+          <!-- nav.html here -->
         </div>
-        <div class="col-xs-6">
+        <div class="col-xs-6 tinyHead">(read eval print loop)</div>
+      </div>
+      <div class="row">
+        <div class="col-xs-6 noPad">
+          <div class='editor'></div>
+        </div>
+        <div class="col-xs-6 noPad">
           <div class="REPL"></div>
+        </div>
+      </div>
+      <div class="row footerRow">
+        <div class="col-xs-12">
+          <div style="display:flex;justify-content:center;width:100%;">
+            Code: <a href="https://github.com/ljwall/tinyJSScheme">Tiny scheme</a>;
+            <a href="https://github.com/ljwall/tinyREPL">web REPL</a>.
+            Built with: <a href="http://codemirror.net/">CodeMiror</a>;
+            <a href="https://github.com/chrisdone/jquery-console">jquery-console</a>;
+            <a href="http://ethanschoonover.com/solarized">Solarized</a>
+          </div>
         </div>
       </div>
     </div>

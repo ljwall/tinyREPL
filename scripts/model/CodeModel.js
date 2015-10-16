@@ -1,0 +1,1 @@
+define(["backbone"],function(e){return e.Model.extend({defaults:{name:"default",code:";; This is an editor...\n\n(define foo 42)\n\n"}})});
