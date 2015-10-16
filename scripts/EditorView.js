@@ -1,6 +1,6 @@
-define(['backbone', 'jquery', 'codemirror', 'codemirror/mode/scheme/scheme'],
-function (Backbone, $, CodeMirror) {
-  return Backbone.View.extend({
+define(['FillDownView', 'jquery', 'codemirror', 'codemirror/mode/scheme/scheme'],
+function (FillDownView, $, CodeMirror) {
+  return FillDownView.extend({
     initialize: function () {
       _.bindAll(this, 'edited', 'render');
       this.editor = CodeMirror(this.el, {

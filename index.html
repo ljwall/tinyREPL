@@ -8,19 +8,32 @@
   </head>
   <body>
     <div class="container-fluid">
-      <div class="row" style="background-color: #EFEFFF; margin-bottom: 15px">
+      <div class="row solarizedDark">
         <div class="col-xs-12">
           <h1>Tiny Scheme!</h1>
           <h3></h3>
         </div>
       </div>
-      <div class="row">
+      <div class="row solarizedDark">
         <div class="col-xs-6">
-          <div id="editor" class='editor'></div>
+          <a class="darkBtn" id="prevLink" href="">Previous</a>
+          <a class="darkBtn" id="nextLink" href="">Next</a>
+          <span class="tinyHead">Introduction</span>
         </div>
-        <div class="col-xs-6">
+        <div class="col-xs-6 tinyHead">(read eval print loop)</div>
+      </div>
+      <div class="row">
+        <div class="col-xs-6 noPad">
+          <div class='editor'></div>
+        </div>
+        <div class="col-xs-6 noPad">
           <div class="REPL"></div>
         </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        Foot-matter...
       </div>
     </div>
     <script data-main="scripts/main.js" src="scripts/require.js"></script>
