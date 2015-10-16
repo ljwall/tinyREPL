@@ -26,12 +26,12 @@ requirejs.config({
 });
 
 define([
-    'REPLView',
-    'EditorView',
+    'view/REPLView',
+    'view/EditorView',
     'Tiny',
     'CodeRouter',
     'backbone',
-    'NavView'],
+    'view/NavView'],
 function (REPLView, EditorView, Tiny, CodeRouter, Backbone, NavView) {
   var router = new CodeRouter(),
       tiny = new Tiny(router.editorModel),

@@ -1,4 +1,4 @@
-define(['backbone', 'text!nav.html', 'underscore'], function (Backbone, navtemplate, _) {
+define(['backbone', 'text!view/nav.html', 'underscore'], function (Backbone, navtemplate, _) {
   return Backbone.View.extend({
     template: _.template(navtemplate),
     initialize: function (options) {

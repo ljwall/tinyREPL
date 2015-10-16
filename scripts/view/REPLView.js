@@ -1,4 +1,4 @@
-define(['FillDownView', 'Tiny', 'jqueryconsole'], function (FillDownView, Tiny) {
+define(['view/FillDownView', 'Tiny', 'jqueryconsole'], function (FillDownView, Tiny) {
   return FillDownView.extend({
     initialize: function (options) {
       options = options || {};

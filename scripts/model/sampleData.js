@@ -1,5 +1,5 @@
 define([
-    'CodeCollection',
+    'model/CodeCollection',
     'text!tinyschemer/intro.scm',
     'text!tinyschemer/functioncalls.scm'
 ], function (CodeCollection, intro, functioncalls) {

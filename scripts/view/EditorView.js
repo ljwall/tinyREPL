@@ -1,4 +1,4 @@
-define(['FillDownView', 'jquery', 'codemirror', 'codemirror/mode/scheme/scheme'],
+define(['view/FillDownView', 'jquery', 'codemirror', 'codemirror/mode/scheme/scheme'],
 function (FillDownView, $, CodeMirror) {
   return FillDownView.extend({
     initialize: function () {

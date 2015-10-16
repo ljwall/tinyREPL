@@ -1,4 +1,4 @@
-define(['backbone', 'sampleData', 'underscore', 'CodeModel'], function (Backbone, sampleData, _, CodeModel) {
+define(['backbone', 'model/sampleData', 'underscore', 'model/CodeModel'], function (Backbone, sampleData, _, CodeModel) {
   return Backbone.Router.extend({
     routes: {
       'q/:index': 'item',
