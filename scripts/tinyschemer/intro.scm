@@ -1,7 +1,7 @@
 ;; Hello..
 ;;
 ;; This is a short tutorial on recursive programming
-;; using a very small programming language based losely
+;; using a very small programming language based loosely
 ;; on the Scheme programming language.
 ;;
 ;; Scheme itself is a dialect of LISP. If you enjoy this
@@ -13,7 +13,7 @@
 ;; tutorial.  Over to the right is the "REPL" - if you
 ;; type an expression and hit enter it will (R)ead it,
 ;; (E)valuate it, (P)rint the result, and (L)oop - i.e.
-;; prompt you for another expression. This pane is a
+;; prompt you for another expression. This pane is an
 ;; editor window which we'll use later on in the
 ;; tutorial.
 ;;
