@@ -17,6 +17,7 @@ define(['backbone', 'sampleData', 'underscore', 'CodeModel'], function (Backbone
       this.selectedIndex = index;
       this.editorModel.set('code', sampleData.at(index).get('code'));
 
+      this.title = sampleData.at(index).get('name');
       if (index > 0) {
         this.prev = '#q/' + (index - 1);
       } else {

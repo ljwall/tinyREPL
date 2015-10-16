@@ -31,8 +31,8 @@ define([
     'Tiny',
     'CodeRouter',
     'backbone',
-    'LinkButtonView'],
-function (REPLView, EditorView, Tiny, CodeRouter, Backbone, LinkButtonView) {
+    'NavView'],
+function (REPLView, EditorView, Tiny, CodeRouter, Backbone, NavView) {
   var router = new CodeRouter(),
       tiny = new Tiny(router.editorModel),
       replView = new REPLView({el: '.REPL', tiny: tiny}),
@@ -40,15 +40,9 @@ function (REPLView, EditorView, Tiny, CodeRouter, Backbone, LinkButtonView) {
         el: '.editor',
         model: router.editorModel
       }),
-      prevBtn = new LinkButtonView({
+      navView = new NavView({
         router: router,
-        urlparam: 'prev',
-        el: '#prevLink'
-      }),
-      nextBtn = new LinkButtonView({
-        router: router,
-        urlparam: 'next',
-        el: '#nextLink'
+        el: '#nav'
       });
 
   Backbone.history.start();
