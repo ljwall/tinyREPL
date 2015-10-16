@@ -6,7 +6,8 @@ function (FillDownView, $, CodeMirror) {
       this.editor = CodeMirror(this.el, {
         lineNumbers: true,
         mode: 'scheme',
-        theme: 'solarized'
+        theme: 'solarized',
+        lineWrapping: true
       });
       this.render();
       this.editor.on('changes', this.edited);
