@@ -1,4 +1,8 @@
-define(['view/FillDownView', 'jquery', 'codemirror', 'codemirror/mode/scheme/scheme'],
+define(['view/FillDownView',
+    'jquery',
+    'codemirror',
+    'codemirror/mode/scheme/scheme',
+    'codemirror/addon/edit/matchbrackets'],
 function (FillDownView, $, CodeMirror) {
   return FillDownView.extend({
     initialize: function () {
@@ -7,7 +11,8 @@ function (FillDownView, $, CodeMirror) {
         lineNumbers: true,
         mode: 'scheme',
         theme: 'solarized',
-        lineWrapping: true
+        lineWrapping: true,
+        matchBrackets: true
       });
       this.render();
       this.editor.on('changes', this.edited);
