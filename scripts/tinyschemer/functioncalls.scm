@@ -21,7 +21,7 @@
 ;; expression that follows should be taken as data and
 ;; not evaluted as a function.
 
-;; If you like try entering this without the ' at the
+;; If you like try entering this (without the ') at the
 ;; REPL:
 ;;    (1 2 3)
 ;;
