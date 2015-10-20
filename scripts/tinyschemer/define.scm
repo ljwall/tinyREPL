@@ -14,7 +14,7 @@
 ; Functions are created with the form:
 ;    (lambda (arg1 arg2 .. argM) expr)
 ;
-; This creates a function whcih takes M arguments,
+; This creates a function which takes M arguments,
 ; arg1 .. argM. When it's called expr is evaluated, and
 ; its value is the return value.
 ;

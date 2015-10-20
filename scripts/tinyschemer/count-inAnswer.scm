@@ -7,12 +7,12 @@
 
 ; Again, it's similar to the length function..
 
-; The recursive part is the similar - this:
+; The recursive part is similar - this:
 ;    (count-in val (tail lst))
-; tells us how many times val occures in the tail
+; tells us how many times val occurs in the tail
 ; of lst.
 ;
-; We add 1 if the head of the lst equals val, otherwise
+; We add 1 if the head of lst equals val, otherwise
 ; we add 0.
 
 ; And again we have to make sure the recurssion

@@ -1,4 +1,4 @@
-; List, as well as being used for data, are used
+; Lists, as well as being used for data, are used
 ; for calling functions. The general form is:
 ;      (FuntionName arg1 arg2 .. argN)
 
@@ -21,7 +21,7 @@
 ; expression that follows should be taken as data and
 ; not evaluted as a function.
 
-; If you like try entering this (without the ') at the
+; If you like, try entering this (without the ') at the
 ; REPL:
 ;    (1 2 3)
 ;
