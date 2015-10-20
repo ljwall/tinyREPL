@@ -23,7 +23,7 @@ define(['tinyJSScheme'], function (tinyJSScheme) {
       throw new Error('Error: ' + err.toString());
     })
     .catch(tinyJSScheme.parseScheme.ParseError, function (err) {
-      throw new Error('Parser error. Expecting:\n' + err.expecting);
+      throw new Error(err.prettyMessage);
     });
   };
 
