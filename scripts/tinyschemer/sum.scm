@@ -15,4 +15,4 @@
       ------)))
 
 ; (Hint, you'll need both the head and tail function. The
-; next section has an answer)
+; next section has an answer.)

@@ -1,6 +1,6 @@
 ; An exercise. Write a count-in function. It should
 ; take two paramters and check how many times the
-; first paramter occures in the second (which should
+; first paramter occurs in the second (which should
 ; be a list)
 
 ; We want:
@@ -18,4 +18,4 @@
 
 ; (Hint, you'll need another `if`, and will need both
 ; the head and tail function. The next section has an
-; answer)
+; answer.)

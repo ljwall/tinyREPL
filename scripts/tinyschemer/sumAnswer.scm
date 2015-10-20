@@ -4,9 +4,9 @@
       0
       (+ (head lst) (sum (tail lst))))))
 
-; This works much like the length function..
+; This works much like the length function.
 
-; We add the firat value in the list (head lst)
+; We add the first value in the list (head lst)
 ; to (sum (tail lst)) which is the recusive call
 ; which tells us the sum of the numbers in the rest
 ; of lst.
