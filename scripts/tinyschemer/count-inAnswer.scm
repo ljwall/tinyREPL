@@ -17,5 +17,5 @@
 
 ; And again we have to make sure the recurssion
 ; ends eventually by testing for the empty list, and
-; returning 0. The empty list certianly doesn't contain
+; returning 0. The empty list certainly doesn't contain
 ; val - whatever the value of val...
