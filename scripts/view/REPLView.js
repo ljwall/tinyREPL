@@ -1,4 +1,11 @@
-define(['view/FillDownView', 'Tiny', 'jqueryconsole'], function (FillDownView, Tiny) {
+define(['view/FillDownView', 'Tiny', 'jquery', 'jqueryconsole'], function (FillDownView, Tiny, $) {
+
+  $.fn.filledText = function(txt){
+    $(this).text(txt);
+    $(this).html($(this).html().replace(/\t/g, '&nbsp;&nbsp;').replace(/\n/g,'<br/>').replace(/ /g, '&nbsp;'));
+    return this;
+  };
+
   return FillDownView.extend({
     initialize: function (options) {
       options = options || {};
